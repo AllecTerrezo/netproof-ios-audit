@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>XcodeLocation</key>
+					<string>{"ExpandTranscript":true,"IndexPath":[3,0]}</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>payload</key>
+					<string>x-xcode-log://0E3C1CC5-63BE-4629-855B-B60C280AFED1</string>
+				</dict>
+				<key>scheme</key>
+				<string>x-xcode-log</string>
+				<key>type</key>
+				<string>IDELogDocumentLocation</string>
+			</dict>
+			<key>title</key>
+			<string>Warning: Skipping duplicate build file in Copy Bundle Resources build phase: /Users/allecterrezo/Dev/NetProof/Localization/pt-BR.lproj/Localizable.strings</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>XcodeLocation</key>
+					<string>{"ExpandTranscript":true,"IndexPath":[3,0]}</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>payload</key>
+					<string>x-xcode-log://0E3C1CC5-63BE-4629-855B-B60C280AFED1</string>
+				</dict>
+				<key>scheme</key>
+				<string>x-xcode-log</string>
+				<key>type</key>
+				<string>IDELogDocumentLocation</string>
+			</dict>
+			<key>title</key>
+			<string>Warning: Skipping duplicate build file in Copy Bundle Resources build phase: /Users/allecterrezo/Dev/NetProof/Localization/pt-BR.lproj/Localizable.strings</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,277 @@
+/* =========================================================
+   APP — Header
+   ========================================================= */
+"app_title" = "NetProof";
+"app_subtitle" = "Ukur. Buktikan. Lindungi koneksi Anda.";
+
+/* =========================================================
+   APP — Quick Test
+   ========================================================= */
+"quick_test" = "Tes Koneksi";
+"quick_test_desc" = "Tekan tombol di bawah untuk menjalankan tes jaringan secara waktu nyata.";
+"run_test" = "Jalankan Tes";
+
+/* =========================================================
+   APP — Last Result
+   ========================================================= */
+"last_result_title" = "Hasil Terakhir";
+"status_label"      = "Status";
+"score_label"       = "Skor";
+
+/* Result tags */
+"status_good"       = "Baik";
+"status_unstable"   = "Tidak Stabil";
+"status_poor"       = "Buruk";
+
+/* =========================================================
+   APP — Context labels
+   ========================================================= */
+"target_host_label" = "Host Target";
+"connection_label"  = "Koneksi";
+
+/* =========================================================
+   APP — Metric labels
+   ========================================================= */
+"avg_latency_label"   = "Latensi Rata-rata";
+"min_latency_label"   = "Latensi Minimum";
+"max_latency_label"   = "Latensi Maksimum";
+"jitter_label"        = "Jitter";
+"packet_loss_label"   = "Kehilangan Paket";
+"total_samples_label" = "Total Sampel";
+"failed_samples_label" = "Sampel Gagal";
+
+/* =========================================================
+   APP — Hash / PDF (UI)
+   ========================================================= */
+"data_integrity_title" = "Integritas Data (SHA-256)";
+"export_pdf_button"    = "Ekspor PDF";
+"pdf_methodology_title" = "Metodologi Tes";
+
+"pdf_methodology_body" =
+"Latensi diukur sebagai waktu round-trip (RTT), dalam milidetik, untuk setiap permintaan jaringan yang berhasil.\n\n\
+Jitter dihitung sebagai standar deviasi sampel dari nilai RTT respons yang berhasil, mewakili variabilitas latensi dari waktu ke waktu. Ketika kumpulan berisi 20 sampel atau lebih, nilai 5%% teratas dan 5%% terbawah dibuang untuk mengurangi dampak pencilan (outlier) yang terisolasi.\n\n\
+Kehilangan paket mewakili persentase permintaan jaringan yang gagal relatif terhadap jumlah total percobaan.\n\n\
+Semua perhitungan dilakukan secara lokal di perangkat, tanpa bergantung pada server eksternal.";
+
+/* =========================================================
+   PDF — Document metadata / watermark
+   ========================================================= */
+"pdf_document_title" = "Laporan Bukti NetProof";
+"pdf_document_subject" = "Catatan pengukuran jaringan teknis otomatis";
+"pdf_watermark" = "Bukti NetProof";
+
+/* =========================================================
+   PDF — Header
+   ========================================================= */
+"pdf_header_title" = "NetProof • Laporan Bukti Teknis";
+"pdf_header_subtitle" = "Pengukuran independen • Alat bawaan iOS/macOS • Integritas yang dapat diverifikasi";
+"pdf_header_evidence_line_format" = "ID Bukti: %@ • Dibuat (UTC): %@";
+
+/* =========================================================
+   PDF — Sections
+   ========================================================= */
+"pdf_section_identification" = "Identifikasi";
+"pdf_section_test_summary" = "Ringkasan Tes";
+"pdf_section_metrics" = "Metrik";
+"pdf_section_samples" = "Sampel";
+"pdf_section_methodology" = "Metodologi";
+"pdf_section_network_environment" = "Lingkungan Jaringan";
+"pdf_section_result_interpretation" = "Interpretasi Hasil";
+"pdf_section_data_integrity" = "Integritas Data (Hash SHA-256)";
+"pdf_section_evidence_signature" = "Tanda Tangan Bukti";
+"pdf_section_verification" = "Halaman Verifikasi";
+"pdf_section_disclaimer" = "Penafian";
+
+/* =========================================================
+   PDF — Identification fields
+   ========================================================= */
+"pdf_field_evidence_id" = "ID Bukti";
+"pdf_field_generated_utc" = "Dibuat (UTC)";
+"pdf_field_local_time_tz_format" = "Waktu Lokal (%@)";
+"pdf_field_device" = "Perangkat";
+"pdf_field_app_version" = "Versi Aplikasi";
+
+"pdf_field_target_host" = "Host Target";
+"pdf_field_status_score" = "Status / Skor";
+"pdf_field_connection_type" = "Jenis Koneksi";
+
+/* Device formatting */
+"pdf_device_value_format" = "%@ • %@ %@";
+
+/* Connection type (App UI) */
+"connection_wifi" = "Wi-Fi";
+"connection_cellular" = "Seluler";
+"connection_wired" = "Kabel (Ethernet)";
+"connection_other" = "Lainnya";
+"connection_unknown" = "Tidak Diketahui";
+
+/* =========================================================
+   PDF — Status & Connection type (for Result Summary)
+   ========================================================= */
+"pdf_status_unknown" = "Belum Ditentukan";
+"pdf_status_stable" = "Stabil";
+"pdf_status_warning" = "Peringatan";
+"pdf_status_unstable" = "Tidak Stabil";
+
+"pdf_connection_wifi" = "Wi-Fi";
+"pdf_connection_wired" = "Kabel (Ethernet)";
+"pdf_connection_cellular" = "Seluler";
+"pdf_connection_unknown" = "Tidak Diketahui";
+"pdf_connection_other" = "Lainnya";
+"pdf_connection_none" = "Tidak Tersedia";
+
+/* PDF - Test mode */
+"pdf_test_mode_single" = "Tunggal";
+"pdf_test_mode_continuous" = "Berkelanjutan";
+
+/* =========================================================
+   PDF — Metrics (table labels)
+   ========================================================= */
+"pdf_metric_avg_latency" = "Latensi Rata-rata";
+"pdf_metric_min_latency" = "Latensi Minimum";
+"pdf_metric_max_latency" = "Latensi Maksimum";
+"pdf_metric_jitter" = "Jitter";
+"pdf_metric_packet_loss" = "Kehilangan Paket";
+"pdf_metric_total_samples" = "Total Sampel";
+"pdf_metric_failed_samples" = "Sampel Gagal";
+
+/* =========================================================
+   PDF — Samples
+   ========================================================= */
+"pdf_samples_row_explainer" = "Setiap baris menunjukkan: indeks • stempel waktu (UTC) • latensi • keberhasilan.";
+"pdf_samples_ok" = "OK";
+"pdf_samples_fail" = "GAGAL";
+"pdf_samples_empty" = "Sampel tes mentah tidak tersedia untuk eksekusi ini.";
+
+/* Samples formatting */
+"pdf_samples_latency_ms_format" = "%.1f md";
+"pdf_samples_latency_na" = "T/A";
+"pdf_samples_line_format" = "#%d • %@ (UTC) • %@ • %@";
+
+/* =========================================================
+   PDF — Network Environment
+   ========================================================= */
+"pdf_wifi_ssid_masked" = "SSID Wi-Fi (Disamarkan)";
+"pdf_wifi_bssid_masked" = "BSSID Wi-Fi (Disamarkan)";
+"pdf_wifi_band" = "Pita Wi-Fi";
+"pdf_wifi_channel" = "Saluran Wi-Fi";
+"pdf_wifi_rssi" = "RSSI Wi-Fi";
+
+"pdf_wifi_privacy_note" = "Data Wi-Fi terperinci (SSID, BSSID, saluran, RSSI) tidak tersedia pada konfigurasi perangkat/iOS ini atau tidak dikumpulkan oleh aplikasi demi alasan privasi.";
+"pdf_cellular_privacy_note" = "Koneksi seluler terdeteksi. Identitas operator dan parameter radio (misalnya, RSRP/RSRQ) tidak diekspos oleh API publik iOS dan tidak dikumpulkan oleh aplikasi ini demi kepatuhan regulasi dan privasi.";
+"pdf_env_no_details" = "Tidak ada detail lingkungan tambahan yang tersedia untuk jenis koneksi ini.";
+
+/* =========================================================
+   PDF — Methodology (formal + detailed)
+   ========================================================= */
+"pdf_methodology_formal_title" = "Definisi Formal (Perhitungan)";
+"pdf_methodology_formal_body" = "Latensi = RTT (waktu round-trip) per permintaan yang berhasil.\nJitter = standar deviasi sampel RTT pada respons yang berhasil (dengan pemangkasan ringan 5%% saat n ≥ 20).\nKehilangan paket = kegagalan / total percobaan.\nSemua perhitungan dilakukan secara lokal di perangkat (offline).";
+
+/* Detailed parameters */
+"pdf_method_packets_count" = "Jumlah paket (sampel)";
+"pdf_method_packets_interval" = "Interval paket";
+"pdf_method_timeout_per_packet" = "Batas waktu per paket";
+"pdf_method_mode" = "Mode";
+"pdf_method_request_method" = "Metode permintaan";
+"pdf_method_request_method_value" = "HTTPS HEAD (dengan fallback aman ke GET)";
+
+/* Procedure (formatted) */
+"pdf_method_measurement_procedure_format" = "Prosedur pengukuran: NetProof mengirimkan %d permintaan HTTP(S) (\"paket\") ke host target yang dipilih. Setiap respons yang berhasil menghasilkan nilai RTT (waktu round-trip) dalam milidetik. Batas waktu (timeout) atau kesalahan jaringan dihitung sebagai paket yang hilang dan berkontribusi pada tingkat kehilangan paket.";
+
+/* Jitter interpretation */
+"pdf_jitter_interp_block_format" = "Interpretasi Jitter: %@. %@";
+"pdf_jitter_interp_low" = "Jitter rendah: umumnya cocok untuk panggilan suara dan video waktu nyata dalam kondisi normal.";
+"pdf_jitter_interp_moderate" = "Jitter sedang: gangguan sesekali dapat terjadi pada aplikasi waktu nyata, terutama di jaringan yang padat.";
+"pdf_jitter_interp_high" = "Jitter tinggi: layanan suara dan video waktu nyata kemungkinan akan mengalami gangguan atau ketidakstabilan yang nyata.";
+
+/* Score formula */
+"pdf_score_formula_body" = "Rumus skor stabilitas: Skor NetProof dimulai dari 100 dan dikurangi oleh penalti yang berasal dari tiga komponen: stabilitas latensi, jitter, dan kehilangan paket. Fungsinya deterministik dan identik di semua tes. Secara konseptual: Skor = maks(0, 100 - f(latensi, jitter, kehilanganPaket)), di mana jitter yang lebih tinggi, kehilangan yang lebih besar, atau lonjakan latensi yang ekstrem akan meningkatkan penalti dan mengurangi skor akhir.";
+
+/* =========================================================
+   PDF — Verification
+   ========================================================= */
+"pdf_verification_hash_label" = "Hash PDF (SHA-256):";
+"pdf_verification_howto_title" = "Cara memvalidasi";
+"pdf_verification_howto_body" = "1) Dapatkan file PDF.\n2) Hitung ulang hash SHA-256 dari file tersebut.\n3) Bandingkan dengan hash yang ditampilkan di halaman ini (atau yang terdapat dalam Kode QR). Jika berbeda, file tersebut telah dirusak.";
+"pdf_verification_integrity_title" = "Offline, determinisme, dan integritas";
+"pdf_verification_integrity_body" = "Laporan ini dibuat secara lokal di perangkat dan dapat diproduksi tanpa koneksi internet. Perhitungannya bersifat deterministik: sampel dan aturan yang sama menghasilkan hasil dan hash yang sama. Setiap perubahan pada byte apa pun di PDF akan mengubah hash dan membatalkan verifikasi.";
+"pdf_verification_scan_qr" = "Pindai Kode QR di bawah ini untuk memvalidasi:";
+"pdf_verification_qr_explainer" = "Kode QR berisi hash SHA-256 dari PDF ini. Perubahan apa pun pada file akan mengubah hash dan membatalkan verifikasi.";
+
+/* =========================================================
+   PDF — Integrity & Signature
+   ========================================================= */
+"pdf_integrity_hash_label" = "Hash Laporan (SHA-256):";
+"pdf_integrity_tamper_note" = "Setiap perubahan pada file akan mengubah hash dan membatalkan verifikasi integritas.";
+
+"pdf_signature_algorithm" = "Algoritma";
+"pdf_signature_value_base64" = "Tanda Tangan (Base64):";
+"pdf_signature_public_key_pem" = "Kunci Publik (PEM):";
+"pdf_signature_missing_note" = "Instans laporan ini tidak menyertakan tanda tangan RSA lokal yang disematkan.";
+
+/* =========================================================
+   PDF — Interpretation
+   ========================================================= */
+"pdf_field_latency_assessment" = "Penilaian Latensi";
+"pdf_latency_assessment_low" = "Latensi rendah: cocok untuk penelusuran, streaming, dan aplikasi waktu nyata.";
+"pdf_latency_assessment_moderate" = "Latensi sedang: umum di jaringan seluler; sedikit penundaan mungkin terasa.";
+"pdf_latency_assessment_high" = "Latensi tinggi: penundaan yang nyata pada halaman, panggilan, dan aplikasi interaktif.";
+"pdf_latency_assessment_very_high" = "Latensi sangat tinggi: kemungkinan lambat, buffering, dan masalah panggilan.";
+
+"pdf_field_packet_loss_assessment" = "Penilaian Kehilangan Paket";
+"pdf_loss_assessment_none" = "Tidak ada kehilangan paket yang relevan. Koneksi stabil.";
+"pdf_loss_assessment_light" = "Kehilangan paket ringan: dapat menyebabkan gangguan sesekali pada panggilan atau streaming.";
+"pdf_loss_assessment_significant" = "Kehilangan paket signifikan: dampak nyata pada penelusuran, panggilan, dan video.";
+
+"pdf_field_jitter_assessment" = "Penilaian Jitter";
+"pdf_jitter_assessment_low" = "Jitter rendah: variasi latensi minimal antar sampel.";
+"pdf_jitter_assessment_moderate" = "Jitter sedang: variasi sesekali dapat memengaruhi panggilan dan aplikasi waktu nyata.";
+"pdf_jitter_assessment_high" = "Jitter tinggi: variasi besar; kemungkinan berdampak pada suara/video dan aplikasi waktu nyata.";
+
+"pdf_conclusion_excellent" = "Koneksi dianggap stabil dan berkinerja baik untuk sebagian besar aplikasi.";
+"pdf_conclusion_good" = "Koneksi menunjukkan tanda-tanda ketidakstabilan tetapi tetap dapat digunakan untuk sebagian besar aplikasi.";
+"pdf_conclusion_poor" = "Koneksi tidak stabil dan rentan terhadap gangguan atau kinerja yang menurun.";
+"pdf_conclusion_severe" = "Koneksi sangat tidak stabil atau menurun. Kemungkinan besar terjadi gangguan yang signifikan.";
+
+/* =========================================================
+   PDF — Disclaimer
+   ========================================================= */
+"pdf_disclaimer_body" = "Dokumen ini adalah catatan pengukuran jaringan teknis otomatis yang dibuat oleh aplikasi NetProof. Ini tidak menggantikan laporan yang dikeluarkan oleh laboratorium terakreditasi, maupun pernyataan resmi dari badan pengatur, pengadilan, atau pengadilan arbitrase.\n\nDi Brasil, Amerika Serikat, Uni Eropa, Amerika Latin, dan yurisdiksi lainnya, catatan ini dapat digunakan sebagai bukti pendukung dalam pengaduan, negosiasi, atau penyelesaian sengketa dengan penyedia layanan internet, tunduk pada undang-undang konsumen dan telekomunikasi setempat. Jika diwajibkan oleh prosedur setempat, terjemahan tersumpah/bersertifikat dari dokumen ini ke dalam bahasa yang berlaku harus disediakan.\n\nNetProof tidak mengontrol jaringan yang diuji, dan satu pengukuran mungkin tidak mewakili kinerja layanan yang biasa. Untuk sengketa formal, disarankan untuk melakukan beberapa tes pada waktu dan lokasi yang berbeda.";
+
+"pdf_disclaimer_offline_note" = "Laporan ini dapat dibuat secara offline. Perhitungannya bersifat deterministik, dan setiap perubahan pada file membatalkan verifikasi hash.";
+
+/* =========================================================
+   PDF — Common formats
+   ========================================================= */
+"pdf_format_ms_1f" = "%.1f md";
+"pdf_format_percent_1f" = "%.1f%%";
+"pdf_format_dbm_int" = "%d dBm";
+"pdf_format_int" = "%d";
+"unit_ms" = "md";
+
+/* Value proposition */
+"app_value_proposition" = "Hasilkan bukti teknis yang dapat diverifikasi tentang kualitas koneksi Anda untuk pengaduan, kerja jarak jauh, dan analisis profesional.";
+
+/* Result evidence explanation */
+"result_evidence_explainer" = "Tes ini menghasilkan bukti teknis. Laporan tersebut dapat digunakan untuk membuktikan kualitas koneksi dalam pengaduan, negosiasi, atau analisis teknis.";
+
+/* PDF export context */
+"pdf_export_context" = "Ekspor PDF untuk menyimpan bukti, membagikannya dengan pihak ketiga, atau menggunakannya dalam pengaduan dan negosiasi.";
+
+/* Actionable result summary */
+"result_actionable_good" = "Koneksi menunjukkan kinerja yang baik saat ini.";
+"result_actionable_unstable" = "Hasilnya menunjukkan ketidakstabilan. Ini mungkin berdampak pada panggilan, kerja jarak jauh, dan streaming.";
+"result_actionable_poor" = "Koneksi tidak stabil atau menurun. Diperkirakan akan sering terjadi masalah.";
+
+/* Next step recommendation */
+"result_next_step_good" = "Jika perlu, buat laporan untuk catatan atau perbandingan di masa mendatang.";
+"result_next_step_unstable" = "Kami merekomendasikan untuk mengulangi tes pada waktu yang berbeda untuk memastikan ketidakstabilan tersebut.";
+"result_next_step_poor" = "Laporan ini dapat digunakan untuk mengajukan keluhan atau bernegosiasi dengan penyedia internet Anda.";
+
+"pdf_section_conclusion" = "Kesimpulan";
+"pdf_verification_open_link" = "Buka tautan ini untuk memverifikasi:";
+
+/* Privacy / Analytics */
+"privacy_analytics_title" = "Privasi dan Penggunaan Data";
+"privacy_analytics_desc" = "NetProof hanya dapat mengumpulkan metrik penggunaan agregat dan anonim (misalnya, jumlah tes dan ekspor) untuk meningkatkan produk. Tidak ada data jaringan, SSID, BSSID, IP, lokasi, atau konten yang dikumpulkan. Anda dapat mengubah ini kapan saja.";
+"privacy_analytics_toggle" = "Izinkan metrik anonim (opt-in)";

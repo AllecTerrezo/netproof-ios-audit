@@ -1,0 +1,277 @@
+/* =========================================================
+   APP — Header
+   ========================================================= */
+"app_title" = "NetProof";
+"app_subtitle" = "Misura. Prova. Proteggi la tua connessione.";
+
+/* =========================================================
+   APP — Quick Test
+   ========================================================= */
+"quick_test" = "Test di connessione";
+"quick_test_desc" = "Premi il pulsante qui sotto per eseguire un test di rete in tempo reale.";
+"run_test" = "Esegui test";
+
+/* =========================================================
+   APP — Last Result
+   ========================================================= */
+"last_result_title" = "Ultimo risultato";
+"status_label"      = "Stato";
+"score_label"       = "Punteggio";
+
+/* Result tags */
+"status_good"       = "Buono";
+"status_unstable"   = "Instabile";
+"status_poor"       = "Scadente";
+
+/* =========================================================
+   APP — Context labels
+   ========================================================= */
+"target_host_label" = "Host di destinazione";
+"connection_label"  = "Connessione";
+
+/* =========================================================
+   APP — Metric labels
+   ========================================================= */
+"avg_latency_label"   = "Latenza media";
+"min_latency_label"   = "Latenza minima";
+"max_latency_label"   = "Latenza massima";
+"jitter_label"        = "Jitter";
+"packet_loss_label"   = "Perdita di pacchetti";
+"total_samples_label" = "Campioni totali";
+"failed_samples_label" = "Campioni falliti";
+
+/* =========================================================
+   APP — Hash / PDF (UI)
+   ========================================================= */
+"data_integrity_title" = "Integrità dei dati (SHA-256)";
+"export_pdf_button"    = "Esporta PDF";
+"pdf_methodology_title" = "Metodologia del test";
+
+"pdf_methodology_body" =
+"La latenza viene misurata come tempo di andata e ritorno (RTT), in millisecondi, per ogni richiesta di rete riuscita.\n\n\
+Il jitter è calcolato come deviazione standard campionaria dei valori RTT delle risposte riuscite, rappresentando la variabilità della latenza nel tempo. Quando il set contiene 20 o più campioni, il 5%% superiore e il 5%% inferiore vengono scartati per ridurre l'impatto dei valori anomali isolati.\n\n\
+La perdita di pacchetti rappresenta la percentuale di richieste di rete fallite rispetto al numero totale di tentativi.\n\n\
+Tutti i calcoli vengono eseguiti localmente sul dispositivo, senza dipendere da server esterni.";
+
+/* =========================================================
+   PDF — Document metadata / watermark
+   ========================================================= */
+"pdf_document_title" = "Rapporto di prova NetProof";
+"pdf_document_subject" = "Registrazione tecnica automatizzata della misurazione di rete";
+"pdf_watermark" = "Prova NetProof";
+
+/* =========================================================
+   PDF — Header
+   ========================================================= */
+"pdf_header_title" = "NetProof • Rapporto Tecnico di Prova";
+"pdf_header_subtitle" = "Misurazione indipendente • Strumenti nativi iOS/macOS • Integrità verificabile";
+"pdf_header_evidence_line_format" = "ID prova: %@ • Generato (UTC): %@";
+
+/* =========================================================
+   PDF — Sections
+   ========================================================= */
+"pdf_section_identification" = "Identificazione";
+"pdf_section_test_summary" = "Riepilogo del test";
+"pdf_section_metrics" = "Metriche";
+"pdf_section_samples" = "Campioni";
+"pdf_section_methodology" = "Metodologia";
+"pdf_section_network_environment" = "Ambiente di rete";
+"pdf_section_result_interpretation" = "Interpretazione dei risultati";
+"pdf_section_data_integrity" = "Integrità dei dati (Hash SHA-256)";
+"pdf_section_evidence_signature" = "Firma della prova";
+"pdf_section_verification" = "Pagina di verifica";
+"pdf_section_disclaimer" = "Avviso legale";
+
+/* =========================================================
+   PDF — Identification fields
+   ========================================================= */
+"pdf_field_evidence_id" = "ID prova";
+"pdf_field_generated_utc" = "Generato (UTC)";
+"pdf_field_local_time_tz_format" = "Ora locale (%@)";
+"pdf_field_device" = "Dispositivo";
+"pdf_field_app_version" = "Versione dell'app";
+
+"pdf_field_target_host" = "Host di destinazione";
+"pdf_field_status_score" = "Stato / Punteggio";
+"pdf_field_connection_type" = "Tipo di connessione";
+
+/* Device formatting */
+"pdf_device_value_format" = "%@ • %@ %@";
+
+/* Connection type (App UI) */
+"connection_wifi" = "Wi-Fi";
+"connection_cellular" = "Rete cellulare";
+"connection_wired" = "Cablata (Ethernet)";
+"connection_other" = "Altra";
+"connection_unknown" = "Sconosciuta";
+
+/* =========================================================
+   PDF — Status & Connection type (for Result Summary)
+   ========================================================= */
+"pdf_status_unknown" = "Indeterminato";
+"pdf_status_stable" = "Stabile";
+"pdf_status_warning" = "Attenzione";
+"pdf_status_unstable" = "Instabile";
+
+"pdf_connection_wifi" = "Wi-Fi";
+"pdf_connection_wired" = "Cablata (Ethernet)";
+"pdf_connection_cellular" = "Rete cellulare";
+"pdf_connection_unknown" = "Sconosciuta";
+"pdf_connection_other" = "Altra";
+"pdf_connection_none" = "Non disponibile";
+
+/* PDF - Test mode */
+"pdf_test_mode_single" = "Singolo";
+"pdf_test_mode_continuous" = "Continuo";
+
+/* =========================================================
+   PDF — Metrics (table labels)
+   ========================================================= */
+"pdf_metric_avg_latency" = "Latenza media";
+"pdf_metric_min_latency" = "Latenza minima";
+"pdf_metric_max_latency" = "Latenza massima";
+"pdf_metric_jitter" = "Jitter";
+"pdf_metric_packet_loss" = "Perdita di pacchetti";
+"pdf_metric_total_samples" = "Campioni totali";
+"pdf_metric_failed_samples" = "Campioni falliti";
+
+/* =========================================================
+   PDF — Samples
+   ========================================================= */
+"pdf_samples_row_explainer" = "Ogni riga mostra: indice • timestamp (UTC) • latenza • successo.";
+"pdf_samples_ok" = "OK";
+"pdf_samples_fail" = "FALLITO";
+"pdf_samples_empty" = "I campioni grezzi del test non sono disponibili per questa esecuzione.";
+
+/* Samples formatting */
+"pdf_samples_latency_ms_format" = "%.1f ms";
+"pdf_samples_latency_na" = "N/D";
+"pdf_samples_line_format" = "#%d • %@ (UTC) • %@ • %@";
+
+/* =========================================================
+   PDF — Network Environment
+   ========================================================= */
+"pdf_wifi_ssid_masked" = "Wi-Fi SSID (Nascosto)";
+"pdf_wifi_bssid_masked" = "Wi-Fi BSSID (Nascosto)";
+"pdf_wifi_band" = "Banda Wi-Fi";
+"pdf_wifi_channel" = "Canale Wi-Fi";
+"pdf_wifi_rssi" = "Wi-Fi RSSI";
+
+"pdf_wifi_privacy_note" = "I dati dettagliati del Wi-Fi (SSID, BSSID, canale, RSSI) non sono disponibili su questa configurazione del dispositivo iOS o non vengono raccolti dall'app per motivi di privacy.";
+"pdf_cellular_privacy_note" = "Connessione cellulare rilevata. L'identità dell'operatore e i parametri radio (es. RSRP/RSRQ) non sono esposti dalle API pubbliche di iOS e non vengono raccolti da questa app per conformità alla privacy e alle normative.";
+"pdf_env_no_details" = "Nessun dettaglio aggiuntivo sull'ambiente è disponibile per questo tipo di connessione.";
+
+/* =========================================================
+   PDF — Methodology (formal + detailed)
+   ========================================================= */
+"pdf_methodology_formal_title" = "Definizioni formali (Calcolo)";
+"pdf_methodology_formal_body" = "Latenza = RTT (tempo di andata e ritorno) per richiesta riuscita.\nJitter = deviazione standard campionaria del RTT sulle risposte riuscite (con un leggero taglio del 5%% quando n ≥ 20).\nPerdita di pacchetti = fallimenti / tentativi totali.\nTutti i calcoli vengono eseguiti localmente sul dispositivo (offline).";
+
+/* Detailed parameters */
+"pdf_method_packets_count" = "Numero di pacchetti (campioni)";
+"pdf_method_packets_interval" = "Intervallo tra i pacchetti";
+"pdf_method_timeout_per_packet" = "Timeout per pacchetto";
+"pdf_method_mode" = "Modalità";
+"pdf_method_request_method" = "Metodo di richiesta";
+"pdf_method_request_method_value" = "HTTPS HEAD (con fallback sicuro a GET)";
+
+/* Procedure (formatted) */
+"pdf_method_measurement_procedure_format" = "Procedura di misurazione: NetProof invia %d richieste HTTP(S) (\"pacchetti\") all'host di destinazione selezionato. Ogni risposta riuscita produce un valore RTT (tempo di andata e ritorno) in millisecondi. I timeout o gli errori di rete vengono contati come pacchetti persi e contribuiscono al tasso di perdita dei pacchetti.";
+
+/* Jitter interpretation */
+"pdf_jitter_interp_block_format" = "Interpretazione del jitter: %@. %@";
+"pdf_jitter_interp_low" = "Jitter basso: generalmente adatto per chiamate vocali e video in tempo reale in condizioni normali.";
+"pdf_jitter_interp_moderate" = "Jitter moderato: potrebbero verificarsi difetti occasionali nelle applicazioni in tempo reale, specialmente su reti congestionate.";
+"pdf_jitter_interp_high" = "Jitter elevato: i servizi vocali e video in tempo reale subiranno probabilmente interruzioni evidenti o instabilità.";
+
+/* Score formula */
+"pdf_score_formula_body" = "Formula del punteggio di stabilità: Il punteggio NetProof inizia da 100 e viene ridotto da penalità derivate da tre componenti: stabilità della latenza, jitter e perdita di pacchetti. La funzione è deterministica e identica per tutti i test. Concettualmente: Punteggio = max(0, 100 - f(latenza, jitter, perditaPacchetti)), dove un jitter più alto, una perdita maggiore o picchi estremi di latenza aumentano la penalità e riducono il punteggio finale.";
+
+/* =========================================================
+   PDF — Verification
+   ========================================================= */
+"pdf_verification_hash_label" = "Hash del PDF (SHA-256):";
+"pdf_verification_howto_title" = "Come convalidare";
+"pdf_verification_howto_body" = "1) Ottieni il file PDF.\n2) Ricalcola l'hash SHA-256 del file.\n3) Confrontalo con l'hash visualizzato in questa pagina (o contenuto nel QR Code). Se differisce, il file è stato manomesso.";
+"pdf_verification_integrity_title" = "Offline, determinismo e integrità";
+"pdf_verification_integrity_body" = "Questo rapporto è stato generato localmente sul dispositivo e può essere prodotto senza una connessione Internet. Il calcolo è deterministico: gli stessi campioni e regole generano gli stessi risultati e lo stesso hash. Qualsiasi alterazione di un singolo byte del PDF modifica l'hash e invalida la verifica.";
+"pdf_verification_scan_qr" = "Scansiona il QR Code qui sotto per convalidare:";
+"pdf_verification_qr_explainer" = "Il QR Code contiene l'hash SHA-256 di questo PDF. Qualsiasi alterazione del file modifica l'hash e invalida la verifica.";
+
+/* =========================================================
+   PDF — Integrity & Signature
+   ========================================================= */
+"pdf_integrity_hash_label" = "Hash del rapporto (SHA-256):";
+"pdf_integrity_tamper_note" = "Qualsiasi alterazione del file modifica l'hash e invalida la verifica di integrità.";
+
+"pdf_signature_algorithm" = "Algoritmo";
+"pdf_signature_value_base64" = "Firma (Base64):";
+"pdf_signature_public_key_pem" = "Chiave pubblica (PEM):";
+"pdf_signature_missing_note" = "Questa istanza del rapporto non include una firma RSA locale incorporata.";
+
+/* =========================================================
+   PDF — Interpretation
+   ========================================================= */
+"pdf_field_latency_assessment" = "Valutazione della latenza";
+"pdf_latency_assessment_low" = "Latenza bassa: adatta per la navigazione, lo streaming e le app in tempo reale.";
+"pdf_latency_assessment_moderate" = "Latenza moderata: comune nelle reti mobili; si possono notare lievi ritardi.";
+"pdf_latency_assessment_high" = "Latenza elevata: ritardi notevoli in pagine, chiamate e app interattive.";
+"pdf_latency_assessment_very_high" = "Latenza molto elevata: probabile lentezza, buffering e problemi con le chiamate.";
+
+"pdf_field_packet_loss_assessment" = "Valutazione perdita pacchetti";
+"pdf_loss_assessment_none" = "Nessuna perdita di pacchetti rilevante. Connessione stabile.";
+"pdf_loss_assessment_light" = "Leggera perdita di pacchetti: può causare difetti occasionali nelle chiamate o nello streaming.";
+"pdf_loss_assessment_significant" = "Significativa perdita di pacchetti: impatto notevole su navigazione, chiamate e video.";
+
+"pdf_field_jitter_assessment" = "Valutazione del jitter";
+"pdf_jitter_assessment_low" = "Jitter basso: minima variazione di latenza tra i campioni.";
+"pdf_jitter_assessment_moderate" = "Jitter moderato: variazioni occasionali possono influenzare chiamate e app in tempo reale.";
+"pdf_jitter_assessment_high" = "Jitter elevato: grande variazione; probabile impatto su voce/video e app in tempo reale.";
+
+"pdf_conclusion_excellent" = "La connessione è considerata stabile e offre buone prestazioni per la maggior parte delle applicazioni.";
+"pdf_conclusion_good" = "La connessione mostra segni di instabilità, ma rimane utilizzabile per la maggior parte delle app.";
+"pdf_conclusion_poor" = "La connessione è instabile e soggetta a interruzioni o prestazioni degradate.";
+"pdf_conclusion_severe" = "La connessione è gravemente instabile o degradata. Sono probabili interruzioni significative.";
+
+/* =========================================================
+   PDF — Disclaimer
+   ========================================================= */
+"pdf_disclaimer_body" = "Questo documento è una registrazione tecnica automatizzata di misurazione di rete generata dall'app NetProof. Non sostituisce i rapporti emessi da laboratori accreditati, né le dichiarazioni ufficiali di agenzie di regolamentazione, tribunali o collegi arbitrali.\n\nIn Brasile, Stati Uniti, Unione Europea, America Latina e altre giurisdizioni, questa registrazione può essere utilizzata come prova a supporto in reclami, negoziazioni o risoluzioni di controversie con fornitori di servizi Internet, in base alle leggi locali sui consumatori e sulle telecomunicazioni. Quando richiesto dalla procedura locale, deve essere fornita una traduzione giurata/certificata di questo documento nella lingua applicabile.\n\nNetProof non controlla la rete testata e una singola misurazione potrebbe non rappresentare le prestazioni abituali del servizio. Per le controversie formali, si raccomanda di eseguire test multipli in orari e luoghi diversi.";
+
+"pdf_disclaimer_offline_note" = "Questo rapporto può essere generato offline. I calcoli sono deterministici e qualsiasi alterazione del file invalida la verifica dell'hash.";
+
+/* =========================================================
+   PDF — Common formats
+   ========================================================= */
+"pdf_format_ms_1f" = "%.1f ms";
+"pdf_format_percent_1f" = "%.1f%%";
+"pdf_format_dbm_int" = "%d dBm";
+"pdf_format_int" = "%d";
+"unit_ms" = "ms";
+
+/* Value proposition */
+"app_value_proposition" = "Genera prove tecniche verificabili della qualità della tua connessione per reclami, lavoro remoto e analisi professionali.";
+
+/* Result evidence explanation */
+"result_evidence_explainer" = "Questo test genera una prova tecnica. Il rapporto può essere utilizzato per dimostrare la qualità della connessione in reclami, negoziazioni o analisi tecniche.";
+
+/* PDF export context */
+"pdf_export_context" = "Esporta il PDF per salvare la prova, condividerla con terze parti o utilizzarla in reclami e negoziazioni.";
+
+/* Actionable result summary */
+"result_actionable_good" = "La connessione mostra buone prestazioni in questo momento.";
+"result_actionable_unstable" = "Il risultato indica instabilità. Potrebbe avere un impatto su chiamate, lavoro remoto e streaming.";
+"result_actionable_poor" = "La connessione è instabile o degradata. Sono previsti problemi frequenti.";
+
+/* Next step recommendation */
+"result_next_step_good" = "Se necessario, genera il rapporto per un registro futuro o un confronto.";
+"result_next_step_unstable" = "Consigliamo di ripetere il test in orari diversi per confermare l'instabilità.";
+"result_next_step_poor" = "Questo rapporto può essere utilizzato per presentare un reclamo o negoziare con il tuo provider Internet.";
+
+"pdf_section_conclusion" = "Conclusione";
+"pdf_verification_open_link" = "Apri questo link per verificare:";
+
+/* Privacy / Analytics */
+"privacy_analytics_title" = "Privacy e utilizzo dei dati";
+"privacy_analytics_desc" = "NetProof può raccogliere solo metriche di utilizzo aggregate e anonime (es. numero di test ed esportazioni) per migliorare il prodotto. Non vengono raccolti dati di rete, SSID, BSSID, IP, posizione o contenuti. Puoi modificare questa opzione in qualsiasi momento.";
+"privacy_analytics_toggle" = "Consenti metriche anonime (opt-in)";

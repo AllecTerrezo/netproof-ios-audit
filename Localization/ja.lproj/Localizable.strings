@@ -1,0 +1,277 @@
+/* =========================================================
+   APP — Header
+   ========================================================= */
+"app_title" = "NetProof";
+"app_subtitle" = "測定。証明。接続を保護。";
+
+/* =========================================================
+   APP — Quick Test
+   ========================================================= */
+"quick_test" = "接続テスト";
+"quick_test_desc" = "以下のボタンを押して、リアルタイムのネットワークテストを実行します。";
+"run_test" = "テストを実行";
+
+/* =========================================================
+   APP — Last Result
+   ========================================================= */
+"last_result_title" = "最新の結果";
+"status_label"      = "ステータス";
+"score_label"       = "スコア";
+
+/* Result tags */
+"status_good"       = "良好";
+"status_unstable"   = "不安定";
+"status_poor"       = "不良";
+
+/* =========================================================
+   APP — Context labels
+   ========================================================= */
+"target_host_label" = "ターゲットホスト";
+"connection_label"  = "接続";
+
+/* =========================================================
+   APP — Metric labels
+   ========================================================= */
+"avg_latency_label"   = "平均レイテンシ";
+"min_latency_label"   = "最小レイテンシ";
+"max_latency_label"   = "最大レイテンシ";
+"jitter_label"        = "ジッター";
+"packet_loss_label"   = "パケットロス";
+"total_samples_label" = "総サンプル数";
+"failed_samples_label" = "失敗したサンプル数";
+
+/* =========================================================
+   APP — Hash / PDF (UI)
+   ========================================================= */
+"data_integrity_title" = "データ整合性 (SHA-256)";
+"export_pdf_button"    = "PDFをエクスポート";
+"pdf_methodology_title" = "テスト方法論";
+
+"pdf_methodology_body" =
+"レイテンシは、成功した各ネットワークリクエストのラウンドトリップタイム（RTT）としてミリ秒単位で測定されます。\n\n\
+ジッターは、成功した応答のRTT値の標本標準偏差として計算され、時間の経過に伴うレイテンシの変動を表します。サンプルセットに20以上のサンプルが含まれる場合、孤立した外れ値の影響を減らすために、上位5%%および下位5%%の値は破棄されます。\n\n\
+パケットロスは、総試行回数に対する失敗したネットワークリクエストの割合を表します。\n\n\
+すべての計算は、外部サーバーに依存することなく、デバイス上でローカルかつ安全に実行されます。";
+
+/* =========================================================
+   PDF — Document metadata / watermark
+   ========================================================= */
+"pdf_document_title" = "NetProof エビデンスレポート";
+"pdf_document_subject" = "自動化された技術的ネットワーク測定記録";
+"pdf_watermark" = "NetProof エビデンス";
+
+/* =========================================================
+   PDF — Header
+   ========================================================= */
+"pdf_header_title" = "NetProof • 技術エビデンスレポート";
+"pdf_header_subtitle" = "独立した測定 • iOS/macOSネイティブツール • 検証可能な整合性";
+"pdf_header_evidence_line_format" = "エビデンスID: %@ • 生成日時 (UTC): %@";
+
+/* =========================================================
+   PDF — Sections
+   ========================================================= */
+"pdf_section_identification" = "識別情報";
+"pdf_section_test_summary" = "テストの概要";
+"pdf_section_metrics" = "メトリクス";
+"pdf_section_samples" = "サンプル";
+"pdf_section_methodology" = "方法論";
+"pdf_section_network_environment" = "ネットワーク環境";
+"pdf_section_result_interpretation" = "結果の解釈";
+"pdf_section_data_integrity" = "データ整合性 (SHA-256 ハッシュ)";
+"pdf_section_evidence_signature" = "エビデンス署名";
+"pdf_section_verification" = "検証ページ";
+"pdf_section_disclaimer" = "免責事項";
+
+/* =========================================================
+   PDF — Identification fields
+   ========================================================= */
+"pdf_field_evidence_id" = "エビデンスID";
+"pdf_field_generated_utc" = "生成日時 (UTC)";
+"pdf_field_local_time_tz_format" = "現地時間 (%@)";
+"pdf_field_device" = "デバイス";
+"pdf_field_app_version" = "アプリバージョン";
+
+"pdf_field_target_host" = "ターゲットホスト";
+"pdf_field_status_score" = "ステータス / スコア";
+"pdf_field_connection_type" = "接続タイプ";
+
+/* Device formatting */
+"pdf_device_value_format" = "%@ • %@ %@";
+
+/* Connection type (App UI) */
+"connection_wifi" = "Wi-Fi";
+"connection_cellular" = "セルラーネットワーク";
+"connection_wired" = "有線 (Ethernet)";
+"connection_other" = "その他";
+"connection_unknown" = "不明";
+
+/* =========================================================
+   PDF — Status & Connection type (for Result Summary)
+   ========================================================= */
+"pdf_status_unknown" = "未確定";
+"pdf_status_stable" = "安定";
+"pdf_status_warning" = "警告";
+"pdf_status_unstable" = "不安定";
+
+"pdf_connection_wifi" = "Wi-Fi";
+"pdf_connection_wired" = "有線 (Ethernet)";
+"pdf_connection_cellular" = "セルラーネットワーク";
+"pdf_connection_unknown" = "不明";
+"pdf_connection_other" = "その他";
+"pdf_connection_none" = "利用不可";
+
+/* PDF - Test mode */
+"pdf_test_mode_single" = "シングル";
+"pdf_test_mode_continuous" = "連続";
+
+/* =========================================================
+   PDF — Metrics (table labels)
+   ========================================================= */
+"pdf_metric_avg_latency" = "平均レイテンシ";
+"pdf_metric_min_latency" = "最小レイテンシ";
+"pdf_metric_max_latency" = "最大レイテンシ";
+"pdf_metric_jitter" = "ジッター";
+"pdf_metric_packet_loss" = "パケットロス";
+"pdf_metric_total_samples" = "総サンプル数";
+"pdf_metric_failed_samples" = "失敗したサンプル数";
+
+/* =========================================================
+   PDF — Samples
+   ========================================================= */
+"pdf_samples_row_explainer" = "各行の表示：インデックス • タイムスタンプ(UTC) • レイテンシ • 成功";
+"pdf_samples_ok" = "成功";
+"pdf_samples_fail" = "失敗";
+"pdf_samples_empty" = "この実行のテストサンプル（生データ）は利用できません。";
+
+/* Samples formatting */
+"pdf_samples_latency_ms_format" = "%.1f ms";
+"pdf_samples_latency_na" = "N/A";
+"pdf_samples_line_format" = "#%d • %@ (UTC) • %@ • %@";
+
+/* =========================================================
+   PDF — Network Environment
+   ========================================================= */
+"pdf_wifi_ssid_masked" = "Wi-Fi SSID (マスク済み)";
+"pdf_wifi_bssid_masked" = "Wi-Fi BSSID (マスク済み)";
+"pdf_wifi_band" = "Wi-Fi バンド";
+"pdf_wifi_channel" = "Wi-Fi チャネル";
+"pdf_wifi_rssi" = "Wi-Fi RSSI";
+
+"pdf_wifi_privacy_note" = "詳細なWi-Fiデータ (SSID, BSSID, チャネル, RSSI) は、現在のiOS/デバイス構成では利用できないか、プライバシー保護の理由からアプリによって収集されていません。";
+"pdf_cellular_privacy_note" = "セルラー接続が検出されました。キャリア識別情報および無線パラメータ (例: RSRP/RSRQ) は、iOSの公開APIによって公開されておらず、プライバシーおよび規制遵守のため本アプリでは収集されません。";
+"pdf_env_no_details" = "この接続タイプで利用できる追加の環境詳細はありません。";
+
+/* =========================================================
+   PDF — Methodology (formal + detailed)
+   ========================================================= */
+"pdf_methodology_formal_title" = "公式定義 (計算)";
+"pdf_methodology_formal_body" = "レイテンシ = 成功したリクエストごとのRTT (ラウンドトリップタイム)。\nジッター = 成功した応答におけるRTTの標本標準偏差 (n ≥ 20の場合、上下5%%のトリミングを適用)。\nパケットロス = 失敗数 / 総試行回数。\nすべての計算は、外部通信を行わずデバイス上でローカルに (オフラインで) 実行されます。";
+
+/* Detailed parameters */
+"pdf_method_packets_count" = "パケット数 (サンプル)";
+"pdf_method_packets_interval" = "パケット間隔";
+"pdf_method_timeout_per_packet" = "パケットあたりのタイムアウト";
+"pdf_method_mode" = "モード";
+"pdf_method_request_method" = "リクエスト方式";
+"pdf_method_request_method_value" = "HTTPS HEAD (GETへの安全なフォールバックを伴う)";
+
+/* Procedure (formatted) */
+"pdf_method_measurement_procedure_format" = "測定手順: NetProofは、選択したターゲットホストに %d 個のHTTP(S)リクエスト (\"パケット\") を送信します。成功した各応答は、ミリ秒単位のRTT (ラウンドトリップタイム) 値を生成します。タイムアウトまたはネットワークエラーはパケットの損失としてカウントされ、パケットロス率に反映されます。";
+
+/* Jitter interpretation */
+"pdf_jitter_interp_block_format" = "ジッターの解釈: %@。%@";
+"pdf_jitter_interp_low" = "低ジッター: 一般に、通常の条件下でのリアルタイムの音声およびビデオ通話に適しています。";
+"pdf_jitter_interp_moderate" = "中程度のジッター: 特に混雑したネットワークでは、リアルタイムアプリケーションで時折障害が発生する可能性があります。";
+"pdf_jitter_interp_high" = "高ジッター: リアルタイムの音声およびビデオサービスにおいて、顕著な中断や不安定性が発生する可能性が高くなります。";
+
+/* Score formula */
+"pdf_score_formula_body" = "安定性スコアの公式: NetProofスコアは100から始まり、レイテンシの安定性、ジッター、およびパケットロスの3つの要素から導き出されるペナルティによって減少します。この関数は決定論的であり、すべてのテストで同一です。概念的には: スコア = max(0, 100 - f(レイテンシ, ジッター, パケットロス)) となり、ジッターの増加、パケットロスの増加、または極端なレイテンシのスパイクによりペナルティが増加し、最終スコアが低下します。";
+
+/* =========================================================
+   PDF — Verification
+   ========================================================= */
+"pdf_verification_hash_label" = "PDFハッシュ (SHA-256):";
+"pdf_verification_howto_title" = "検証方法";
+"pdf_verification_howto_body" = "1) PDFファイルを取得します。\n2) ファイルのSHA-256ハッシュを再計算します。\n3) このページ (またはQRコード内) に表示されているハッシュと比較します。異なる場合、ファイルは改ざんされています。";
+"pdf_verification_integrity_title" = "オフライン、決定論、および整合性";
+"pdf_verification_integrity_body" = "このレポートはデバイス上でローカルに生成されたものであり、インターネット接続なしで作成できます。計算は決定論的です。同じサンプルとルールは、常に同じ結果とハッシュを生成します。PDFの1バイトでも変更されるとハッシュが変わり、検証は無効になります。";
+"pdf_verification_scan_qr" = "検証するには、以下のQRコードをスキャンしてください:";
+"pdf_verification_qr_explainer" = "QRコードには、このPDFのSHA-256ハッシュが含まれています。ファイルに変更が加わるとハッシュが変わり、検証は無効になります。";
+
+/* =========================================================
+   PDF — Integrity & Signature
+   ========================================================= */
+"pdf_integrity_hash_label" = "レポートハッシュ (SHA-256):";
+"pdf_integrity_tamper_note" = "ファイルに変更が加わるとハッシュが変わり、整合性検証は無効になります。";
+
+"pdf_signature_algorithm" = "アルゴリズム";
+"pdf_signature_value_base64" = "署名 (Base64):";
+"pdf_signature_public_key_pem" = "公開鍵 (PEM):";
+"pdf_signature_missing_note" = "このレポートインスタンスには、埋め込まれたローカルRSA署名が含まれていません。";
+
+/* =========================================================
+   PDF — Interpretation
+   ========================================================= */
+"pdf_field_latency_assessment" = "レイテンシ評価";
+"pdf_latency_assessment_low" = "低レイテンシ: ブラウジング、ストリーミング、リアルタイムアプリに適しています。";
+"pdf_latency_assessment_moderate" = "中程度のレイテンシ: モバイルネットワークで一般的です。わずかな遅延が感じられる場合があります。";
+"pdf_latency_assessment_high" = "高レイテンシ: ページ、通話、インタラクティブなアプリで顕著な遅延が発生します。";
+"pdf_latency_assessment_very_high" = "非常に高いレイテンシ: 動作の遅延、バッファリング、通話の問題が発生する可能性が高くなります。";
+
+"pdf_field_packet_loss_assessment" = "パケットロス評価";
+"pdf_loss_assessment_none" = "重大なパケットロスなし。安定した接続です。";
+"pdf_loss_assessment_light" = "軽度のパケットロス: 通話やストリーミング中に時折障害が発生する可能性があります。";
+"pdf_loss_assessment_significant" = "重大なパケットロス: ブラウジング、通話、ビデオに顕著な影響があります。";
+
+"pdf_field_jitter_assessment" = "ジッター評価";
+"pdf_jitter_assessment_low" = "低ジッター: サンプル間のレイテンシ変動が最小限です。";
+"pdf_jitter_assessment_moderate" = "中程度のジッター: 時折の変動が通話やリアルタイムアプリに影響を与える可能性があります。";
+"pdf_jitter_assessment_high" = "高ジッター: 大きな変動。音声/ビデオおよびリアルタイムアプリに重大な影響を与える可能性が高くなります。";
+
+"pdf_conclusion_excellent" = "接続は安定しており、ほとんどのアプリケーションで良好なパフォーマンスを発揮します。";
+"pdf_conclusion_good" = "接続に不安定な兆候が見られますが、ほとんどのアプリで引き続き使用できます。";
+"pdf_conclusion_poor" = "接続は不安定であり、中断やパフォーマンスの低下が発生しやすい状態です。";
+"pdf_conclusion_severe" = "接続は非常に不安定または劣化しています。重大な中断が発生する可能性が高いです。";
+
+/* =========================================================
+   PDF — Disclaimer
+   ========================================================= */
+"pdf_disclaimer_body" = "このドキュメントは、NetProofアプリによって生成された自動化された技術的ネットワーク測定記録です。認定された研究所によって発行されたレポートや、規制当局、裁判所、または仲裁機関からの公式な声明に代わるものではありません。\n\nブラジル、米国、欧州連合、ラテンアメリカ、およびその他の管轄区域において、この記録は、現地の消費者法および電気通信法に従い、インターネットサービスプロバイダーとの苦情、交渉、または紛争解決における裏付け証拠として使用できる場合があります。現地の手続きで義務付けられている場合は、該当する言語への本ドキュメントの宣誓/公認翻訳を提供する必要があります。\n\nNetProofはテスト対象のネットワークを制御しておらず、単一の測定結果がサービスの通常のパフォーマンスを表すとは限りません。正式な紛争の場合は、異なる日時および場所で複数のテストを実行することを強くお勧めします。";
+
+"pdf_disclaimer_offline_note" = "このレポートはオフラインで生成できます。計算は決定論的であり、ファイルに少しでも変更が加わるとハッシュ検証は無効になります。";
+
+/* =========================================================
+   PDF — Common formats
+   ========================================================= */
+"pdf_format_ms_1f" = "%.1f ms";
+"pdf_format_percent_1f" = "%.1f%%";
+"pdf_format_dbm_int" = "%d dBm";
+"pdf_format_int" = "%d";
+"unit_ms" = "ms";
+
+/* Value proposition */
+"app_value_proposition" = "苦情の申し立て、リモートワーク、および専門的な分析のために、接続品質の検証可能な技術エビデンスを生成します。";
+
+/* Result evidence explanation */
+"result_evidence_explainer" = "このテストは技術エビデンスを生成します。レポートを使用して、苦情、交渉、または技術分析における接続の品質を証明できます。";
+
+/* PDF export context */
+"pdf_export_context" = "PDFをエクスポートしてエビデンスを保存したり、第三者と共有したり、苦情や交渉に使用したりできます。";
+
+/* Actionable result summary */
+"result_actionable_good" = "接続は現在良好なパフォーマンスを示しています。";
+"result_actionable_unstable" = "結果は不安定性を示しています。通話、リモートワーク、およびストリーミングに影響を与える可能性があります。";
+"result_actionable_poor" = "接続が不安定または劣化しています。頻繁な問題が予想されます。";
+
+/* Next step recommendation */
+"result_next_step_good" = "必要に応じて、将来の記録や比較のためにレポートを生成してください。";
+"result_next_step_unstable" = "不安定性を確認するために、別の時間帯にテストを繰り返すことをお勧めします。";
+"result_next_step_poor" = "このレポートを使用して、インターネットプロバイダーに苦情を申し立てたり、交渉したりできます。";
+
+"pdf_section_conclusion" = "結論";
+"pdf_verification_open_link" = "検証するにはこちらのリンクを開いてください:";
+
+/* Privacy / Analytics */
+"privacy_analytics_title" = "プライバシーとデータ使用";
+"privacy_analytics_desc" = "NetProofは、製品を改善するために、匿名化および集計された使用状況メトリクス (例: テストやエクスポートの回数) のみを収集する場合があります。ネットワークデータ、SSID、BSSID、IP、位置情報、またはコンテンツは収集されません。この設定はいつでも変更できます。";
+"privacy_analytics_toggle" = "匿名のメトリクスを許可する (オプトイン)";
