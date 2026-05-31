@@ -2,7 +2,27 @@
 
 First off, thank you for considering contributing to NetProof! This project aims to provide cryptographically verifiable, privacy-first network diagnostics. 
 
+As the project scales, the core maintainership is focused strictly on **architectural curation, code review, and project direction**. This means the community is highly encouraged to take ownership of coding features, refactoring, and building infrastructure.
+
 To maintain a high standard of engineering, security, and privacy, we ask all contributors to follow the guidelines below.
+
+## Where We Need Help (Project Roadmap)
+
+Whether you are a junior developer looking for a quick win or a Staff Engineer looking for a complex architectural challenge, there is a place for you here.
+
+### 🔴 High Priority & Complex (Infrastructure & Testing)
+* **XCTest Framework Setup:** We need to establish a robust unit testing environment. This involves setting up the `XCTest` target, marking the scheme as "Shared," and pushing it to the repository so our CI/CD pipeline can run actual tests.
+* **Core Logic Unit Tests:** Implement comprehensive unit tests for `AnalysisEngine` (verifying trimmed means and jitter calculations) and `PDFEvidenceEngine` (verifying local RSA-2048 signing and SHA-256 hashing).
+* **Dependency Injection:** Refactor ViewModels (like `TestRunnerViewModel`) to accept dependencies via protocols, enabling proper mocking and testing.
+
+### 🟡 Intermediate (Refactoring & Architecture)
+* **De-massive Files:** `PDFEvidenceEngine.swift` is currently handling too many responsibilities (layout, drawing, and cryptography). We need to split this into smaller, focused services (e.g., separating the crypto engine from the PDF canvas drawer).
+* **Network Layer Polish:** Transition the current `URLSession` implementation to utilize Apple's lower-level `Network` framework (`NWConnection`) for more granular, high-performance path monitoring.
+
+### 🟢 Accessible & Quick Wins
+* UI/UX improvements in SwiftUI.
+* Improving Markdown documentation and inline SwiftDoc comments.
+* Adding new localizations for the PDF report outputs.
 
 ## Branching Strategy
 
@@ -24,7 +44,7 @@ NetProof is built on a foundation of trust and verifiable data. When writing cod
 * **Offline-First:** Core functionalities must not rely on external APIs. All cryptographic hashing and PDF generation must happen on-device.
 * **Privacy by Design:** Never log, store, or transmit Personally Identifiable Information (PII). Respect metadata masking (e.g., SSID/BSSID hiding).
 * **Modern Swift:** Utilize Swift concurrency (`async/await`, `@MainActor`) over legacy callback patterns where appropriate. Keep the MVVM architecture clean.
-* **No Massive Files:** Keep your types focused and small. If a service is doing too much, split it.
+* **Testability:** Any new core logic or statistical service must be accompanied by unit tests. 
 
 ## Commit Message Convention
 
@@ -38,11 +58,11 @@ We follow the [Conventional Commits](https://www.conventionalcommits.org/) stand
 * `test:` Adding missing tests or correcting existing tests
 * `chore:` Changes to the build process or auxiliary tools
 
-**Example:** `feat: implement async URLSession diagnostic probe`
+**Example:** `feat: implement async NWConnection diagnostic probe`
 
-## Pull Request Process
+## Pull Request Process & Curation
 
 * Ensure your code compiles without warnings on the latest stable version of Xcode.
 * Fill out the Pull Request Template completely.
 * Keep your PRs small and focused on a single issue or feature. If you have multiple unrelated changes, open multiple PRs.
-* A maintainer will review your code. We may request changes to align with the project's architectural vision.
+* **Strict Curation:** A maintainer will rigorously review your code. We prioritize security, privacy, and architectural cleanliness over shipping fast. Be prepared to receive constructive feedback and make adjustments to align with the project's vision.
