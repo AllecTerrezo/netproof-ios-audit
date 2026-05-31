@@ -20,6 +20,19 @@ NetProof adheres to strict privacy-by-design principles:
 * **Masked Metadata:** Wi-Fi metadata is masked to ensure user anonymity.
 * **Local Processing:** No external cloud API dependencies for core diagnostic functionality.
 
+### Built With
+* **Swift:** The core logic is built with modern, safe Swift 5.10+.
+* **SwiftUI:** Declarative UI framework for a responsive and native experience.
+* **Network Framework:** Low-level, high-performance path monitoring and diagnostic probes.
+* **CryptoKit:** Apple's native framework for secure hashing and cryptographic operations.
+* **Combine:** Used for reactive data flow and state management.
+
+### Getting Started
+1. Clone the repository to your local machine.
+2. Open `NetProof.xcodeproj` in Xcode 15+.
+3. Select your target device (Simulator or physical iOS/macOS device).
+4. Build and run to start performing local network audits.
+
 ### Verification
 To verify the integrity of a generated report:
 1. Extract the data hash from the PDF or JSON export.
