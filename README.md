@@ -12,6 +12,29 @@ In a landscape dominated by opaque network diagnostics, proving the root cause o
 ### Architecture
 NetProof follows a strict **Offline-First** and decentralized architecture. All computational processes—from statistical analysis of network jitter to cryptographic signing and PDF report generation—are performed entirely on-device. This guarantees that sensitive diagnostic data never leaves the user's environment unless explicitly exported.
 
+```mermaid
+graph TD
+    subgraph "Local Environment (iOS/macOS)"
+        
+        A[URLSession / NWConnection] -->|Raw Latency| B(Analysis Engine)
+        B -->|Trimmed Means Filter| C{Statistical Payload}
+        
+        subgraph "Apple Secure Enclave"
+            D[RSA-2048 Private Key]
+        end
+        
+        C -->|SHA-256 Hash| E(CryptoKit Engine)
+        D -->|Sign Hash locally| E
+        
+        E -->|Cryptographically Sealed| F[PDF Evidence Engine]
+        F -->|CoreGraphics Rendering| G[(Tamper-Evident Report)]
+        
+        style B fill:#1e1e1e,stroke:#333,stroke-width:2px,color:#fff
+        style E fill:#1e1e1e,stroke:#333,stroke-width:2px,color:#fff
+        style D fill:#2d0000,stroke:#ff4d4d,stroke-width:2px,color:#fff
+    end
+```
+
 ### Key Features
 * **Verifiable Integrity:** Every diagnostic run produces a unique SHA-256 hash representing the exact state of the network at that time.
 * **Hardware-Backed Security:** Cryptographic signatures are generated using RSA-2048 keys managed securely within the Apple Secure Enclave / Keychain.
