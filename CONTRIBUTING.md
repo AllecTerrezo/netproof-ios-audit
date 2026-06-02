@@ -11,6 +11,7 @@ To maintain a high standard of engineering, security, and privacy, we ask all co
 Whether you are a junior developer looking for a quick win or a Staff Engineer looking for a complex architectural challenge, there is a place for you here.
 
 ### 🔴 High Priority & Complex (Infrastructure & Testing)
+* **Core Engine Modularization (SPM):** Our strategic goal is to decouple the core network auditing and cryptographic signing logic from the main iOS application. We need to extract the `AnalysisEngine` and the cryptographic components of `PDFEvidenceEngine` into a standalone, dependency-free Swift Package (SPM). This will allow other engineers to seamlessly integrate our tamper-evident diagnostics into their own enterprise stacks.
 * **XCTest Framework Setup:** We need to establish a robust unit testing environment. This involves setting up the `XCTest` target, marking the scheme as "Shared," and pushing it to the repository so our CI/CD pipeline can run actual tests.
 * **Core Logic Unit Tests:** Implement comprehensive unit tests for `AnalysisEngine` (verifying trimmed means and jitter calculations) and `PDFEvidenceEngine` (verifying local RSA-2048 signing and SHA-256 hashing).
 * **Dependency Injection:** Refactor ViewModels (like `TestRunnerViewModel`) to accept dependencies via protocols, enabling proper mocking and testing.
